@@ -91,11 +91,12 @@ button:active {
     }
 
     &__item {
+        display: flex;
         padding: 0 16px;
         text-decoration: none;
         color: #fff;
         font-family: $font;
-        line-height: 64px;
+        align-items: center;
         font-size: 14px;
         font-weight: 400;
         letter-spacing: 0;
@@ -242,8 +243,11 @@ button:active {
 
 @media screen and (max-width: 835px) {
     .header {
-        height: auto;
+        height: 65px;
     }
+    .menu-nav {
+	visibility: hidden;
+}
 }
 
 @media screen and (max-width: 1226px) {
@@ -270,6 +274,9 @@ button:active {
         display: grid;
         grid-template-columns: repeat(2, minmax(172px, auto));
     }
+    .grid-film {
+	justify-content: center;
+}
 }
 
 #reviewStars-input input:checked ~ label,
